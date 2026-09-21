@@ -418,7 +418,7 @@
 
     .header-btn.hb2{
         width:48%;
-        gap: 5px;
+        /* gap: 5px; */
     }
 
     .header-btn.hb3{
@@ -521,7 +521,13 @@
 
 }
 
+.grid-body:hover{
+    filter: grayscale(0%);
+}
 
+.grid-body2:hover{
+    filter: grayscale(0%);
+}
 
 .card{
     /* border: 1px solid #dda0dd; */
@@ -543,8 +549,6 @@ margin-top: 5%;
 
 .grid-body2{
     min-height: 100dvh;
-    
-    /* grid-template-columns: repeat(3,1fr); */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 5px;
@@ -659,12 +663,13 @@ margin-top: 5%;
 
 @media(max-width:900px){
     .footer>div{
-        width: 70%;
-        gap: 100px;
+        width: 50%;
+        /* gap: 100px; */
         row-gap: 10px;
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         flex-wrap: wrap;
+        /* flex-flow: column; */
     }
 }
 
@@ -674,6 +679,11 @@ margin-top: 5%;
     width: 100%;
     font-size: 14px;
     line-height: 24px;
+}
+
+.footer>div{
+    width: 70%;
+    row-gap: 30px;
 }
 
 
