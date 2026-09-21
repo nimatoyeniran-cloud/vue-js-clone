@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inter;
 }
 
 .container{
@@ -38,3 +41,101 @@
     /* transform: skewX(20deg); */
 
 }
+
+.container2{
+     height: 60dvh;
+    width: 80%;
+    margin: 100px auto;
+     display: flex;
+     justify-content: space-between;
+    
+}
+
+.box2{
+    width: 30%;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 140px;
+   
+}
+
+.box2>img{
+    /* display: block; */
+    height: 60%;
+    width: 100%;
+    
+}
+
+.box3{
+    background-color: #014086;
+    width: 90%;
+    min-height: 65%;
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+    line-height: 24px;
+    padding: 30px 40px;
+    
+}
+
+.box3>h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10%;
+}
+
+.box3>p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10%;
+    
+}
+
+.box3>a{
+    color: white;
+    text-decoration: none;
+    /* font-size: 3rem; */
+    border: 3px solid white;
+    padding: 10px 10px;
+}
+
+
+.box3-orange{
+    background-color: rgb(255, 123, 0);
+    width: 92%;
+    min-height: 65%;
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+    line-height: 24px;
+    padding: 30px 40px;
+    
+}
+
+.box3-orange>h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10%;
+}
+
+.box3-orange>p{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10%;
+    
+}
+
+.box3-orange>a{
+    color: white;
+    text-decoration: none;
+    /* font-size: 3rem; */
+    border: 3px solid white;
+    padding: 10px 10px;
+}
+
