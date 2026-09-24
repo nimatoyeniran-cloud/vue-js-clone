@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    height: 80dvh;
+    margin: 20px auto;
+    border: 1px solid;
+    background-image: url(https://www.shutterstock.com/image-photo/view-runway-airport-few-planes-260nw-580632724.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.airplane{
+    margin-left: 0px;
+    margin-top: calc(70% - 90dvh);
+    /* border: 3px solid purple; */
+    width: fit-content;
+}
+
+.container>.airplane{
+    animation: takeoff 10s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
+   
+}
+
+.container:hover >.airplane{
+    animation-play-state: paused;
+}
+
+@keyframes takeoff {
+
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        /* border: 1; */
+    }
+
+
+
+    20% {
+        transform: translate(100px, 0) rotate(0deg);
+    }
+
+    40%{
+         transform: translate(200px, 0) rotate(-10deg);
+    }
+
+    50% {
+        transform: translate(300px, -50px) rotate(-12deg);
+        
+    }
+
+    60% {
+        transform: translate(400px, -100px) rotate(-12deg);
+    }
+
+    70% {
+        transform: translate(500px, -150px) rotate(-12deg);
+    }
+
+    90%{
+        transform: translate(900px, -300px) rotate(-2deg);
+    }
+
+    100% {
+        transform: translate(1500px, -320px);
+    }
+}
+
+.sound{
+    border: 1px solid yellow;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+/* @keyframes takeoff{ */
+   /* 0%{
+    transform: translate(0);
+   }
+
+   25%{
+    transform: translate(0px, 300px);
+    transform: translateX(200px);
+   }
+
+   50%{
+    transform: translate(100px);
+   }
+
+   75%{
+    transform: translate(0px, 300px);
+    transform: translateX(200px);
+   } */
+    
+/* } */

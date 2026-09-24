@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 50vw;
+    height: 50dvh;
+}
+
+.boxx{
+    background-color: plum;
+    height: 120px;
+    width: 120px;
+    animation-name: roundabout;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+}
+
+.container:hover .boxx{
+    animation-play-state: paused;
+}
+
+@keyframes to-fro{
+    from{
+        /* translate: 500px; */
+        scale: .3;
+    }
+
+    to{
+        /* translate: 100px; */
+        scale: 1;
+    }
+
+    
+}
+
+@keyframes roundabout{
+
+    0%{
+        translate: ;
+    }
+
+    20%{
+        translate: calc(50vw - 120px);
+        /* 120px is the width of the boxx, so if we use just translate 50vw, it'll contain the whole 50vw and then the 120px will span outside. so we use calc to measure the boxx width from the container width. so it'll move from 0X to 100X, then 100X/0Y to 100Y, then 100Y/100X to 0 */
+    }
+
+    50%{
+        translate: calc(50vw - 120px) calc(50dvh  - 120px);
+        /* first one is along the X diection and then the second one moves along the Y direction */
+    }
+
+    75%{
+        translate: 0 calc(50dvh - 120px);
+    }
+
+    100%{
+        translate: 0;
+    }
+}
+
+.container2{
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 50vw;
+    /* height: 50dvh; */
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    
+   
+}
+
+.container2>.cardd{
+    height: 300px;
+    width: 300px;
+    background-color: cadetblue;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+
+@keyframes slider{
+    from{
+        translate: -150vw;
+    }
+
+    to{
+        translate: 0vw;
+    }
+}
+

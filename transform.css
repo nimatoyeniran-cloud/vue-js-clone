@@ -68,6 +68,7 @@
 
 .box3{
     background-color: #014086;
+    /* background-color: transparent; */
     width: 90%;
     min-height: 65%;
     position: absolute;
@@ -82,6 +83,7 @@
 .box3>h3{
     font-size: 18px;
     font-weight: 600;
+    font-family: inter;
     color: white;
     margin-bottom: 10%;
 }
@@ -137,5 +139,36 @@
     /* font-size: 3rem; */
     border: 3px solid white;
     padding: 10px 10px;
+}
+
+@media(max-width:900px){
+    .container2{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 45px;
+        /* justify-content: space-around; */
+    }
+
+    .box2{
+        width: 47%;
+    }
+}
+
+@media(max-width: 500px){
+    .container2{
+        margin-bottom: 20%;
+        width: 90%;
+        /* border: 1px solid green; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .box2{
+        flex-shrink: 0;
+        width: 100%;
+        
+    }
 }
 
